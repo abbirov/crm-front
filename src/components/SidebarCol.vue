@@ -11,7 +11,7 @@
             </div>
             <img src="@/assets/icon/sb-devider.png" class="t-devider" alt="devider">
             <!-- Offcanvas body start -->
-            <div class="offcanvas-body pt-0 ps-0">
+            <div class="offcanvas-body layer-bg pt-0 ps-0">
                 <div class="row">
                     <div class="col-4">
                         <img src="@/assets/avatar/ameliya.svg" class="rounded-circle ms-3 ava" alt="avatar">
@@ -76,6 +76,11 @@ export default {
 </script>
 
 <style scoped>
+.layer-bg {
+    background-color: white;
+    box-shadow: 6px 0 18px rgba(0, 0, 0, 0.06);
+
+}
 .email {
     font-family: Poppins, sans-serif;
     font-style: normal;
