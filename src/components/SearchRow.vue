@@ -5,32 +5,32 @@
             <div class="col me-4 layer-bg clr-gray p-3">
                 <img src="@/assets/icon/search.svg" class="ms-2" alt="search">
                 <span class="ms-2">
-                                Foydalanuvchi qidirish
-                            </span>
+                    Foydalanuvchi qidirish
+                </span>
             </div>
         </div>
         <div class="col-3 ps-0 pe-4">
             <div class="col me-4 layer-bg clr-gray p-3">
                 <img src="@/assets/icon/search.svg" class="ms-2" alt="search">
                 <span class="ms-2">
-                                Email qidirish
-                            </span>
+                    Email qidirish
+                </span>
             </div>
         </div>
         <div class="col-3 ps-0 pe-4">
             <div class="col ms-2 me-4 layer-bg clr-gray p-3">
                 <img src="@/assets/icon/search.svg" class="ms-2" alt="search">
                 <span class="ms-2">
-                                Parol qidirish
-                            </span>
+                    Parol qidirish
+                </span>
             </div>
         </div>
         <div class="col-3 ps-0 pe-0">
             <div class="col ms-2 layer-bg clr-gray p-3">
                 <img src="@/assets/icon/search.svg" class="ms-2" alt="search">
                 <span class="ms-2">
-                                So'nggi  faolikni      qidirish
-                            </span>
+                    So'nggi faolikni qidirish
+                </span>
             </div>
         </div>
     </div>

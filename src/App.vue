@@ -4,9 +4,10 @@
             <SidebarCol/>
 
             <div class="col ms-5">
-                <TopBarCol/>
+                <TopBarRow/>
                 <FilterCol/>
-                <SearchCols/>
+                <SearchRow/>
+                <TableRow/>
             </div>
 
         </div>
@@ -17,13 +18,14 @@
 
 
 import SidebarCol from "@/components/SidebarCol.vue";
-import TopBarCol from "@/components/TopBarCol.vue";
+import TopBarRow from "@/components/TopBarRow.vue";
 import FilterCol from "@/components/FilterCol.vue";
-import SearchCols from "@/components/SearchCols.vue";
+import SearchRow from "@/components/SearchRow.vue";
+import TableRow from "@/components/TableRow.vue";
 
 export default {
     name: 'App',
-    components: {SearchCols, FilterCol, TopBarCol, SidebarCol}
+    components: {TableRow, SearchRow, FilterCol, TopBarRow, SidebarCol}
 }
 </script>
 
@@ -40,17 +42,7 @@ h5 {
     color: #109CF1;
 
 }
-.layer-bg {
-    background-color: white;
-    box-shadow: 6px 0 18px rgba(0, 0, 0, 0.06);
 
-}
-.poppins {
-    font-family: Poppins, sans-serif;
-}
-.clr-gray {
-    color: #707683;
-}
 
 
 
