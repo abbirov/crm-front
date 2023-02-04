@@ -4,14 +4,14 @@
         <h5 class=" text-center mt-4" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Inc</h5>
 
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+        <div class="offcanvas offcanvas-start layer-bg" data-bs-scroll="true" data-bs-backdrop="false"
              tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title mt-1 ms-2" id="offcanvasScrollingLabel">Kadirov Inc</h5>
             </div>
             <img src="@/assets/icon/sb-devider.png" class="t-devider" alt="devider">
             <!-- Offcanvas body start -->
-            <div class="offcanvas-body layer-bg pt-0 ps-0">
+            <div class="offcanvas-body pt-0 ps-0">
                 <div class="row">
                     <div class="col-4">
                         <img src="@/assets/avatar/ameliya.svg" class="rounded-circle ms-3 ava" alt="avatar">

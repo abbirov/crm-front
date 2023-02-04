@@ -1,12 +1,10 @@
 <template>
     <!--Top bar col start -->
-    <div class="col ms-5">
         <div class="row p-3 layer-bg">
             <div class="col d-flex justify-content-end col-btn-add">
                 <button class="btn  btn-primary btn-color poppins"  type="button">Foydalanuvchi qo'shish</button>
             </div>
         </div>
-    </div>
     <!-- Top bar col end-->
 </template>
 

@@ -2,8 +2,12 @@
     <div class="container-fluid">
         <div class="row">
             <SidebarCol/>
-            <TopBarCol/>
 
+            <div class="col ms-5">
+                <TopBarCol/>
+                <FilterCol/>
+                <SearchCols/>
+            </div>
 
         </div>
     </div>
@@ -14,10 +18,12 @@
 
 import SidebarCol from "@/components/SidebarCol.vue";
 import TopBarCol from "@/components/TopBarCol.vue";
+import FilterCol from "@/components/FilterCol.vue";
+import SearchCols from "@/components/SearchCols.vue";
 
 export default {
     name: 'App',
-    components: {TopBarCol, SidebarCol}
+    components: {SearchCols, FilterCol, TopBarCol, SidebarCol}
 }
 </script>
 
@@ -34,6 +40,18 @@ h5 {
     color: #109CF1;
 
 }
+.layer-bg {
+    background-color: white;
+    box-shadow: 6px 0 18px rgba(0, 0, 0, 0.06);
+
+}
+.poppins {
+    font-family: Poppins, sans-serif;
+}
+.clr-gray {
+    color: #707683;
+}
+
 
 
 </style>
