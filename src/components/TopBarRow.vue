@@ -1,8 +1,11 @@
 <template>
+
+
+
     <!--Top bar col start -->
         <div class="row p-3 layer-bg">
             <div class="col d-flex justify-content-end col-btn-add">
-                <button class="btn  btn-primary btn-color poppins"  type="button">Foydalanuvchi qo'shish</button>
+                <button class="btn  btn-primary btn-color poppins" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Foydalanuvchi qo'shish</button>
             </div>
         </div>
     <!-- Top bar col end-->
