@@ -1,13 +1,16 @@
 <template>
     <!--Sideber start -->
     <div class="col-3 layer-bg sidebar p-0 ">
-        <h5 class=" text-center mt-4" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Inc</h5>
+        <h5 class=" text-center mt-4" type="button" data-bs-toggle="offcanvas">
+            <router-link class="rt" to="/">Inc</router-link>
+        </h5>
 
         <div class="offcanvas offcanvas-start layer-bg" data-bs-scroll="true" data-bs-backdrop="false"
              tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title mt-1 ms-2" id="offcanvasScrollingLabel">Kadirov Inc</h5>
+                <h5 class="offcanvas-title mt-1 ms-2" id="offcanvasScrollingLabel">
+                    <router-link class="rt" to="/">Kadirov Inc</router-link>
+                </h5>
             </div>
             <img src="@/assets/icon/sb-devider.png" class="t-devider" alt="devider">
             <!-- Offcanvas body start -->
@@ -36,7 +39,7 @@
                 <img src="@/assets/icon/sb-devider.png" class="t-devider mt-3" alt="devider">
                 <div class="col mt-4 ms-3">
                     <img src="@/assets/icon/settings.svg" class="ms-3 icon" alt="settings">
-                    <span class="email poppins ms-3"> Sozlamalar</span>
+                    <router-link to="/settings" class="email poppins ms-3 rt"> Sozlamalar</router-link>
                 </div>
                 <div class="mt-4 ms-3 mt-menu"  type="button" data-bs-dismiss="offcanvas" aria-label="Close">
                     <img src="@/assets/icon/menu.svg" class="ms-3 icon" alt="settings">
@@ -59,7 +62,9 @@
         </div>
         <img src="@/assets/icon/sb-devider.png" id="sb-devider" alt="devider">
         <div class="col mt-4 ms-3">
-            <img src="@/assets/icon/settings.svg" class="ms-3 icon" alt="clients">
+            <router-link to="/settings">
+                <img src="@/assets/icon/settings.svg" class="ms-3 icon" alt="clients">
+            </router-link>
         </div>
         <div class="col mt-4 ms-3" type="button" data-bs-toggle="offcanvas"
              data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
@@ -131,6 +136,9 @@ export default {
     margin-bottom: 30px;
 }
 .mt-menu {
-    margin-top: 250px  !important;
+    margin-top: 254px  !important;
+}
+.rt{
+    text-decoration: none;
 }
 </style>

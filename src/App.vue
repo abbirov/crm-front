@@ -4,11 +4,7 @@
             <SidebarCol/>
 
             <div class="col ms-5">
-                <AddUserModal/>
-                <TopBarRow/>
-                <FilterCol/>
-                <SearchRow/>
-                <TableRow/>
+                <HomePage/>
             </div>
 
         </div>
@@ -19,15 +15,11 @@
 
 
 import SidebarCol from "@/components/SidebarCol.vue";
-import TopBarRow from "@/components/TopBarRow.vue";
-import FilterCol from "@/components/FilterCol.vue";
-import SearchRow from "@/components/SearchRow.vue";
-import TableRow from "@/components/TableRow.vue";
-import AddUserModal from "@/components/AddUserModal.vue";
+import HomePage from "@/pages/HomePage.vue";
 
 export default {
     name: 'App',
-    components: {AddUserModal, TableRow, SearchRow, FilterCol, TopBarRow, SidebarCol}
+    components: {HomePage,SidebarCol}
 }
 </script>
 
