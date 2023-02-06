@@ -1,8 +1,8 @@
 <template>
     <!-- Form modal start-->
-    <div class="modal fade poppins" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="setUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content poppins">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5 fw-bolder" id="exampleModalLabel">O'zgartirish</h1>
                 </div>
@@ -20,7 +20,9 @@
                             <label for="exampleInputPassword1" class="form-label fw-semibold">Parol</label>
                             <input type="password" class="form-control" id="exampleInputPassword1">
                         </div>
-                        <button type="submit" class="btn btn-primary">O'zgartirish</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">O'zgartirish
+                        </button>
                     </form>
                 </div>
             </div>
@@ -46,4 +48,17 @@ h1 {
 .btn {
     margin-left: 175px;
 }
+
+/* Modal border burchaklarni qirrali qilish
+uchun 'modal-content' classi yoniga yoziladi
+
+.border-qirra {
+    border-radius: 0;
+}
+*/
+.modal {
+    background-color: transparent;
+}
+
+
 </style>

@@ -20,7 +20,7 @@
                         <img src="@/assets/avatar/ameliya.svg" class="rounded-circle ms-3 ava" alt="avatar">
                     </div>
                     <div class="col-8 mt-4 ps-0">
-                        <div class="col mt-1 fw-bold fs-5 poppins">Ameliya</div>
+                        <div class="col mt-1 fw-semibold fs-5 poppins">Ameliya</div>
                         <div class="col mt-1 poppins email"> ameliya@gmail.com</div>
                     </div>
                 </div>

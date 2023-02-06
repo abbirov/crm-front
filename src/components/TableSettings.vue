@@ -1,5 +1,4 @@
 <template>
-    <!-- Table start -->
     <div class="row mt-4">
         <div class="col  poppins ps-0 mt-2 pe-0">
             <table class="table layer-bg mb-0">
@@ -23,9 +22,11 @@
                     <td class="p-3 ps-5 clr-gray">5 minut oldin</td>
                     <td class="p-3 ps-5">
                         <img src="@/assets/icon/edit-pen.svg" type="button"
-                         data-bs-toggle="modal" data-bs-target="#exampleModal2" alt="pen">
+                         data-bs-toggle="modal" data-bs-target="#setUserModal" alt="pen">
                     </td>
-                    <td class="p-3"><img src="@/assets/icon/delete.svg" alt="trash"></td>
+                    <td class="p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="@/assets/icon/delete.svg" type="button" alt="trash">
+                    </td>
 
                 </tr>
                 <tr>
@@ -112,7 +113,12 @@
 
 <script>
 export default {
-    name: "TableSettings"
+    name: "TableSettings",
+    methods: {
+        udalit: () => {
+            this.$root.$emit('TopBarRow')
+        }
+    }
 }
 </script>
 
@@ -140,4 +146,6 @@ img {
     width: 20px;
     height: 20px;
 }
+
+
 </style>

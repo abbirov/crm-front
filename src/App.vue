@@ -4,6 +4,9 @@
             <SidebarCol/>
 
             <div class="col ms-5">
+
+
+
                 <HomePage/>
             </div>
 
@@ -12,10 +15,20 @@
 </template>
 
 <script>
-
-
 import SidebarCol from "@/components/SidebarCol.vue";
 import HomePage from "@/pages/HomePage.vue";
+
+const bootstrap = require('bootstrap')
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+if (toastTrigger) {
+    toastTrigger.addEventListener('click', () => {
+        // eslint-disable-next-line no-undef
+        const toast = new bootstrap.Toast(toastLiveExample)
+
+        toast.show()
+    })
+}
 
 export default {
     name: 'App',
