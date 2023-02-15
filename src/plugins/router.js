@@ -1,14 +1,31 @@
 import {createRouter, createWebHistory} from "vue-router";
-import TableRow from "@/components/TableRow.vue";
+import HomePage from "@/pages/HomePage.vue";
 
 const routes = [
     {
         path: '/',
-        component: TableRow
+        component: HomePage,
+
     },
     {
         path: '/settings',
-        component: () => import('@/components/TableSettings.vue')
+        component: () => import('@/pages/UserSetPage.vue')
+    },
+    {
+        path: '/companies',
+        component: () => import('@/pages/ComPage.vue')
+    },
+    {
+        path: '/companies/settings',
+        component: () => import('@/pages/ComSetPage.vue')
+    },
+    {
+        path: '/clients',
+        component: () => import('@/pages/ClientPage.vue')
+    },
+    {
+        path: '/clients/settings',
+        component: () => import('@/pages/ClientSetPage.vue')
     }
 ]
 

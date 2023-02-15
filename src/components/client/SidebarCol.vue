@@ -26,20 +26,20 @@
                 </div>
                 <div class="col mt-4 ms-3">
                     <img src="@/assets/icon/user.svg" class="ms-3 icon" alt="contact">
-                    <span class="email poppins ms-3"> Foydalanuvchi qo'shish</span>
+                    <router-link to="/" class="email poppins ms-3 rt"> Foydalanuvchilar</router-link>
                 </div>
                 <div class="col mt-4 ms-3 ">
                     <img src="@/assets/icon/home.svg" class="ms-3 home" alt="home">
-                    <span class="email poppins ms-4">Kompaniyalar</span>
+                    <router-link to="/companies" class="email poppins ms-4 rt">Kompaniyalar</router-link>
                 </div>
                 <div class="col mt-4 ms-3">
-                    <img src="@/assets/icon/clients.svg" class="ms-3 icon"  alt="clients">
-                    <span class="email poppins ms-3"> Mijozlar</span>
+                    <img src="@/assets/icon/clients.svg" class="ms-3 icon" alt="clients">
+                    <router-link to="/clients" class="email poppins ms-3 rt"> Mijozlar</router-link>
                 </div>
                 <img src="@/assets/icon/sb-devider.png" class="t-devider mt-3" alt="devider">
                 <div class="col mt-4 ms-3">
                     <img src="@/assets/icon/settings.svg" class="ms-3 icon" alt="settings">
-                    <router-link to="/settings" class="email poppins ms-3 rt"> Sozlamalar</router-link>
+                    <router-link to="/client/settings" class="email poppins ms-3 rt"> Sozlamalar</router-link>
                 </div>
                 <div class="mt-4 ms-3 mt-menu"  type="button" data-bs-dismiss="offcanvas" aria-label="Close">
                     <img src="@/assets/icon/menu.svg" class="ms-3 icon" alt="settings">
@@ -52,17 +52,23 @@
             <img src="@/assets/avatar/ameliya.svg" class="rounded-circle ms-3 ava" alt="avatar">
         </div>
         <div class="col mt-4 ms-3">
-            <img src="@/assets/icon/user.svg" class="ms-3 icon" alt="contact">
+            <router-link to="/">
+                <img src="@/assets/icon/user.svg" class="ms-3 icon" alt="contact">
+            </router-link>
         </div>
         <div class="col mt-4 ms-3 ">
-            <img src="@/assets/icon/home.svg" class="ms-3 home" alt="home">
+            <router-link to="/companies">
+                <img src="@/assets/icon/home.svg" class="ms-3 home" alt="home">
+            </router-link>
         </div>
         <div class="col mt-4 ms-3">
-            <img src="@/assets/icon/clients.svg" class="ms-3 icon"  alt="clients">
+            <router-link to="/clients">
+                <img src="@/assets/icon/clients.svg" class="ms-3 icon" alt="clients">
+            </router-link>
         </div>
         <img src="@/assets/icon/sb-devider.png" id="sb-devider" alt="devider">
         <div class="col mt-4 ms-3">
-            <router-link to="/settings">
+            <router-link to="/clients/settings">
                 <img src="@/assets/icon/settings.svg" class="ms-3 icon" alt="clients">
             </router-link>
         </div>
@@ -102,7 +108,6 @@ export default {
 }
 .sidebar {
     width: 95px;
-    height: 100%;
 }
 #offcanvasScrolling {
     width: 300px;
@@ -141,4 +146,6 @@ export default {
 .rt{
     text-decoration: none;
 }
+
+
 </style>

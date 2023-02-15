@@ -15,13 +15,13 @@
     <!-- Notifications -->
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="position-fixed n-delete poppins p-3">
-                    <span class="ms-3 fs-5">Rostdan ham o'chirilsinmi?</span>
-                    <button type="button" class="btn ms-5 me-5 b-yes text-light">Ha</button>
-                    <button type="button" class="btn me-3 b-no text-light">Yo'q</button>
+            <div class="modal-content m-size">
+                <div class="n-delete poppins p-3">
+                    <span class="ms-3 fs-5 fw-semibold">Rostdan ham o'chirilsinmi?</span>
+                    <button type="button" class="btn ms-5 me-4 b-yes text-light">Ha</button>
+                    <button type="button" class="btn b-no text-light">Yo'q</button>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
                 <button class="btn  btn-primary btn-color poppins"
                 type="button" data-bs-toggle="modal" data-bs-target="#addUserModal"
                 >
-                    Foydalanuvchi qo'shish
+                    Mijoz qo'shish
                 </button>
             </div>
         </div>
@@ -44,6 +44,9 @@
 
 <script>
 export default {
+    name: 'TopBarRow.vue',
+
+
     // Togglelar keyinchalik modal orniga ishlatishim mumkin
     // data() {
     //     return {
@@ -56,6 +59,8 @@ export default {
     //         this.del = !this.del
     //     }
     // },
+
+
 
 }
 </script>
@@ -95,6 +100,9 @@ export default {
     height: 40px;
     background: #34D57E;
     border-radius: 2px;
+}
+.m-size {
+    width: 600px;
 }
 
 /*.n-success {*/

@@ -20,9 +20,7 @@
                             <label for="exampleInputPassword1" class="form-label fw-semibold">Parol</label>
                             <input type="password" class="form-control" id="exampleInputPassword1">
                         </div>
-                        <button class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">O'zgartirish
-                        </button>
+                        <button class="btn btn-primary">O'zgartirish</button>
                     </form>
                 </div>
             </div>
@@ -33,7 +31,7 @@
 
 <script>
 export default {
-    name: "PutUserModal"
+    name: "SetClientModal"
 }
 </script>
 
@@ -48,14 +46,6 @@ h1 {
 .btn {
     margin-left: 175px;
 }
-
-/* Modal border burchaklarni qirrali qilish
-uchun 'modal-content' classi yoniga yoziladi
-
-.border-qirra {
-    border-radius: 0;
-}
-*/
 .modal {
     background-color: transparent;
 }

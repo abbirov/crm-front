@@ -3,7 +3,7 @@
     <div class="col mt-2">
         <div class="row">
             <div class="col poppins ps-0">
-                <span class="clr-gray">Kompaniya:</span>
+                <span class="clr-gray">Mijoz:</span>
                 <span class="dropdown">
                     <a class="btn text-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                        data-bs-toggle="dropdown" aria-expanded="false">
@@ -24,7 +24,8 @@
 
 <script>
 export default {
-    name: "FilterCol"
+    name: "FilterCol",
+
 }
 </script>
 
@@ -34,5 +35,8 @@ export default {
 }
 .clr-gray {
     color: #707683;
+}
+a {
+    border: none;
 }
 </style>

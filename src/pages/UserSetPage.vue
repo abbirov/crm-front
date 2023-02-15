@@ -1,6 +1,7 @@
 <template>
+
     <div class="row">
-        <SidebarCol/>
+        <SidebarCol path="/settings"/>
 
         <div class="col ms-5">
             <AddUserModal/>
@@ -8,11 +9,10 @@
             <TopBarRow/>
             <FilterCol/>
             <SearchRow/>
-            <TableRow/>
+            <SetUserTable/>
         </div>
 
     </div>
-
 
 </template>
 
@@ -22,11 +22,11 @@ import FilterCol from "@/components/user/FilterCol.vue";
 import SearchRow from "@/components/user/SearchRow.vue";
 import AddUserModal from "@/components/user/AddUserModal.vue";
 import SetUserModal from "@/components/user/SetUserModal.vue";
-import TableRow from "@/components/user/TableRow.vue";
+import SetUserTable from "@/components/user/SetUserTable.vue";
 import SidebarCol from "@/components/user/SidebarCol.vue";
 export default {
     name: "HomePage",
-    components: {SidebarCol, TableRow, SetUserModal, AddUserModal,SearchRow, FilterCol, TopBarRow,}
+    components: {SidebarCol, SetUserTable, SetUserModal, AddUserModal,SearchRow, FilterCol, TopBarRow,}
 }
 </script>
 

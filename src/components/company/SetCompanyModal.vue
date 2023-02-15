@@ -1,15 +1,15 @@
 <template>
     <!-- Form modal start-->
-    <div class="modal fade poppins" id="addUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="setUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content poppins">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5 fw-bolder" id="exampleModalLabel">Foydalanuvchi qo'shish</h1>
+                    <h1 class="modal-title fs-5 fw-bolder" id="exampleModalLabel">O'zgartirish</h1>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="name" class="form-label fw-semibold">Ism</label>
+                            <label for="name" class="form-label fw-semibold">Nomi</label>
                             <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
@@ -20,7 +20,7 @@
                             <label for="exampleInputPassword1" class="form-label fw-semibold">Parol</label>
                             <input type="password" class="form-control" id="exampleInputPassword1">
                         </div>
-                        <button type="submit" class="btn btn-primary">Qo'shish</button>
+                        <button class="btn btn-primary">O'zgartirish</button>
                     </form>
                 </div>
             </div>
@@ -31,18 +31,24 @@
 
 <script>
 export default {
-    name: "FormModal"
+    name: "SetCompanyModal"
 }
 </script>
 
 <style scoped>
+
 .poppins {
     font-family: Poppins, sans-serif;
 }
 h1 {
-    margin-left: 100px;
+    margin-left: 170px;
 }
 .btn {
-    margin-left: 190px;
+    margin-left: 175px;
 }
+.modal {
+    background-color: transparent;
+}
+
+
 </style>
