@@ -5,7 +5,6 @@ const routes = [
     {
         path: '/',
         component: HomePage,
-
     },
     {
         path: '/settings',

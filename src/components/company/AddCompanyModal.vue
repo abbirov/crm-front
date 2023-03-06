@@ -1,6 +1,6 @@
 <template>
     <!-- Form modal start-->
-    <div class="modal fade poppins" id="addUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade poppins" id="addCompanyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -10,15 +10,15 @@
                     <form @submit.prevent="auth">
                         <div class="mb-3">
                             <label for="name" class="form-label fw-semibold">Nomi</label>
-                            <input v-model="form.name" type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                            <input v-model="form.name" type="text" class="form-control" >
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label fw-semibold">Email</label>
-                            <input v-model="form.email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input v-model="form.email" type="email" class="form-control" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label fw-semibold">Parol</label>
-                            <input v-model="form.password" type="password" class="form-control" id="exampleInputPassword1">
+                            <input v-model="form.password" type="password" class="form-control">
                         </div>
                         <button type="submit" class="btn btn-primary">Qo'shish</button>
                     </form>

@@ -11,7 +11,7 @@
                 </tr>
                 <tr>
                     <th scope="row" class="ps-4">
-                        <img src="@/assets/avatar/lindsey.svg" class="rounded-circle ms-3 ava " alt="avatar">
+                        <img src="@/assets/avatar/kadirov-inc.png" class="rounded-circle ms-3 ava " alt="avatar">
                         Kadirov Inc
                     </th>
                     <td class="p-3 ps-5 clr-gray">kadirov.inc@gmail.com</td>

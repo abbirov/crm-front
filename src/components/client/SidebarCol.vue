@@ -39,7 +39,7 @@
                 <img src="@/assets/icon/sb-devider.png" class="t-devider mt-3" alt="devider">
                 <div class="col mt-4 ms-3">
                     <img src="@/assets/icon/settings.svg" class="ms-3 icon" alt="settings">
-                    <router-link to="/client/settings" class="email poppins ms-3 rt"> Sozlamalar</router-link>
+                    <router-link to="/clients/settings" class="email poppins ms-3 rt"> Sozlamalar</router-link>
                 </div>
                 <div class="mt-4 ms-3 mt-menu"  type="button" data-bs-dismiss="offcanvas" aria-label="Close">
                     <img src="@/assets/icon/menu.svg" class="ms-3 icon" alt="settings">

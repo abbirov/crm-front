@@ -20,7 +20,7 @@
                         <img src="@/assets/avatar/ameliya.svg" class="rounded-circle ms-3 ava" alt="avatar">
                     </div>
                     <div class="col-8 mt-4 ps-0">
-                        <div class="col mt-1 fw-semibold fs-5 poppins">Ameliya</div>
+                        <div class="col mt-1 fw-semibold fs-5 poppins">{{getUser.name}}</div>
                         <div class="col mt-1 poppins email"> ameliya@gmail.com</div>
                     </div>
                 </div>
@@ -72,18 +72,31 @@
                 <img src="@/assets/icon/settings.svg" class="ms-3 icon" alt="clients">
             </router-link>
         </div>
+
         <div class="col mt-4 ms-3" type="button" data-bs-toggle="offcanvas"
              data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
             <img src="@/assets/icon/menu.svg" class="ms-3 icon menu" alt="menu">
         </div>
+
     </div>
     <!--Sideber end -->
 </template>
 
 <script>
 
+import {mapActions, mapGetters} from "vuex";
+
 export default {
     name: "SidebarCol",
+    computed: {
+        ...mapGetters(['getUser'])
+    },
+    methods: {
+        ...mapActions(['fetchUser'])
+    },
+    mounted() {
+        this.fetchUser(1)
+    }
 
 
 }

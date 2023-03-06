@@ -30,7 +30,7 @@
                 </div>
                 <div class="col mt-4 ms-3 ">
                     <img src="@/assets/icon/home.svg" class="ms-3 home" alt="home">
-                    <router-link to="/companys" class="email poppins ms-4 rt">Kompaniyalar</router-link>
+                    <router-link to="/companies" class="email poppins ms-4 rt">Kompaniyalar</router-link>
                 </div>
                 <div class="col mt-4 ms-3">
                     <img src="@/assets/icon/clients.svg" class="ms-3 icon" alt="clients">

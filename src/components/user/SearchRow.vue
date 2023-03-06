@@ -4,25 +4,25 @@
         <div class="col-3 ps-0 pe-4">
             <div class="col me-4 layer-bg clr-gray p-3">
                 <img src="@/assets/icon/search.svg" class="ms-2" alt="search">
-                <input  type="text" placeholder="Foydalanuvchi qidirish" class="ms-2">
+                <input  type="text" placeholder="Foydalanuvchi qidirish" class="ms-2 col-10">
             </div>
         </div>
         <div class="col-3 ps-0 pe-4">
             <div class="col me-4 layer-bg clr-gray p-3">
                 <img src="@/assets/icon/search.svg" class="ms-2" alt="search">
-                <input  type="text" placeholder="Email qidirish" class="ms-2">
+                <input  type="text" placeholder="Email qidirish" class="ms-2 col-10">
             </div>
         </div>
         <div class="col-3 ps-0 pe-4">
             <div class="col ms-2 me-4 layer-bg clr-gray p-3">
                 <img src="@/assets/icon/search.svg" class="ms-2" alt="search">
-                <input  type="text" placeholder="Parol qidirsh" class="ms-2">
+                <input  type="text" placeholder="Parol qidirsh" class="ms-2 col-10">
             </div>
         </div>
         <div class="col-3 ps-0 pe-0">
             <div class="col ms-2 layer-bg clr-gray p-3">
                 <img src="@/assets/icon/search.svg" class="ms-2" alt="search">
-                <input  type="text" placeholder="So'nggi faollikni qidirish" class="ms-2">
+                <input  type="text" placeholder="So'nggi faollikni qidirish" class="ms-2 col-10">
             </div>
         </div>
     </div>
@@ -50,5 +50,6 @@ export default {
 input {
     border: none;
     outline: none;
+    background-color: transparent;
 }
 </style>

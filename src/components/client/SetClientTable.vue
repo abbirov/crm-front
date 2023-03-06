@@ -24,7 +24,7 @@
                     <td class="p-3 ps-5 clr-gray">5 minut oldin</td>
                     <td class="p-3 ps-5">
                         <img src="@/assets/icon/edit-pen.svg" type="button"
-                             data-bs-toggle="modal" data-bs-target="#setUserModal" alt="pen">
+                             data-bs-toggle="modal" data-bs-target="#setClientModal" alt="pen">
                     </td>
                     <td class="p-3" data-bs-toggle="modal" data-bs-target="#delete">
                         <img src="@/assets/icon/delete.svg" type="button" alt="trash">

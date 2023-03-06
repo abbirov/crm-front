@@ -7,18 +7,18 @@
                     <div class="fs-5 fw-bolder ml" id="exampleModalLabel">Foydalanuvchi qo'shish</div>
                 </div>
                 <div class="modal-body">
-                    <form @submit.prevent="auth">
+                    <form @submit.prevent="addForm">
                         <div class="mb-3">
                             <label for="name" class="form-label fw-semibold">Ism</label>
-                            <input v-model="form.name" type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                            <input v-model="form.name" type="text" class="form-control">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label fw-semibold">Email</label>
-                            <input v-model="form.email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input v-model="form.email" type="email" class="form-control" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label fw-semibold">Parol</label>
-                            <input v-model="form.password" type="password" class="form-control" id="exampleInputPassword1">
+                            <input v-model="form.password" type="password" class="form-control">
                         </div>
                         <button type="submit" class="btn btn-primary">Qo'shish</button>
                     </form>
@@ -31,6 +31,8 @@
 
 <script>
 
+import {mapActions} from "vuex";
+
 export default {
     name: "AddUserModal",
     data() {
@@ -42,6 +44,15 @@ export default {
             }
         }
     },
+    methods: {
+        ...mapActions(['addUser']),
+        addForm(){
+            this.addUser(this.form)
+                .then(() => {
+                    this.$router.push('/')
+                })
+        }
+    }
 }
 </script>
 

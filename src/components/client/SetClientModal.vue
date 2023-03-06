@@ -1,6 +1,6 @@
 <template>
     <!-- Form modal start-->
-    <div class="modal fade" id="setUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="setClientModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content poppins">
                 <div class="modal-header">
@@ -10,15 +10,15 @@
                     <form>
                         <div class="mb-3">
                             <label for="name" class="form-label fw-semibold">Ism</label>
-                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                            <input type="text" class="form-control" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label fw-semibold">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label fw-semibold">Parol</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <input type="password" class="form-control">
                         </div>
                         <button class="btn btn-primary">O'zgartirish</button>
                     </form>
