@@ -1,6 +1,6 @@
 <template>
     <!--Sideber start -->
-    <div class="col-3 layer-bg sidebar p-0 ">
+    <div class="col-3 layer-bg sidebar p-0">
         <h5 class=" text-center mt-4" type="button" data-bs-toggle="offcanvas">
             <router-link class="rt" to="/">Inc</router-link>
         </h5>
@@ -20,7 +20,7 @@
                         <img src="@/assets/avatar/ameliya.svg" class="rounded-circle ms-3 ava" alt="avatar">
                     </div>
                     <div class="col-8 mt-4 ps-0">
-                        <div class="col mt-1 fw-semibold fs-5 poppins">{{getUser.name}}</div>
+                        <div class="col mt-1 fw-semibold fs-5 poppins">Ameliya</div>
                         <div class="col mt-1 poppins email"> ameliya@gmail.com</div>
                     </div>
                 </div>
@@ -84,19 +84,9 @@
 
 <script>
 
-import {mapActions, mapGetters} from "vuex";
 
 export default {
-    name: "SidebarCol",
-    computed: {
-        ...mapGetters(['getUser'])
-    },
-    methods: {
-        ...mapActions(['fetchUser'])
-    },
-    mounted() {
-        this.fetchUser(1)
-    }
+    name: "SidebarCol"
 
 
 }

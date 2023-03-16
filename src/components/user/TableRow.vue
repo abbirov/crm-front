@@ -17,7 +17,7 @@
                         {{user.name}}
                     </th>
                     <td class="p-3 ps-5 clr-gray">{{user.email}}</td>
-                    <td class="p-3 ps-5 clr-gray"></td>
+                    <td class="p-3 ps-5 clr-gray">{{user.password}}</td>
                     <td class="p-3 ps-5 clr-gray">5 minut oldin</td>
                 </tr>
 

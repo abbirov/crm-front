@@ -20,7 +20,7 @@
                             <label for="exampleInputPassword1" class="form-label fw-semibold">Parol</label>
                             <input v-model="form.password" type="password" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-primary">Qo'shish</button>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Qo'shish</button>
                     </form>
                 </div>
             </div>
@@ -45,11 +45,11 @@ export default {
         }
     },
     methods: {
-        ...mapActions(['addUser']),
+        ...mapActions(['addUser', 'fetchUsers']),
         addForm(){
             this.addUser(this.form)
                 .then(() => {
-                    this.$router.push('/')
+                    this.fetchUsers()
                 })
         }
     }
