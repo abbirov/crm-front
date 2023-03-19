@@ -10,11 +10,11 @@
                     <form @submit.prevent="addForm">
                         <div class="mb-3">
                             <label for="name" class="form-label fw-semibold">Ism</label>
-                            <input v-model="form.name" type="text" class="form-control">
+                            <input v-model="form.name" type="text" placeholder="John Doe" class="form-control">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label fw-semibold">Email</label>
-                            <input v-model="form.email" type="email" class="form-control" aria-describedby="emailHelp">
+                            <input v-model="form.email" type="email" placeholder="johndoe@gmail.com" class="form-control" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label fw-semibold">Parol</label>

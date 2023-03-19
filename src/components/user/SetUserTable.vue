@@ -212,7 +212,7 @@ img {
     width: 600px;
 }
 .n-success {
-    margin-left: 420px;
+    margin-left: 25%;
     border: none;
     border-radius: 5px;
     background: #F7685B;

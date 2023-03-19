@@ -1,4 +1,4 @@
-import axios from "@/plugins/vuex/axios";
+import axios from "axios";
 
 export default {
     actions: {
@@ -16,9 +16,9 @@ export default {
                     })
             })
         },
-        fetchUsers(context){
+        fetchUsers(context, userUrl = ''){
             return new Promise((resolve, reject) => {
-                axios.get('http://localhost:2205/api/users')
+                axios.get('http://localhost:2205/api/users/' + userUrl)
                     .then((response) => {
                         console.log('Userlar olindi')
 
@@ -34,6 +34,7 @@ export default {
                     })
                     .catch(() => {
                         console.log('Userlarni olishda xatolik')
+                        console.log(userUrl)
                         reject()
                     })
             })
