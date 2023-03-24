@@ -85,7 +85,6 @@
 <!--                    <td class="p-3 ps-5 clr-gray">Ancha avval</td>-->
 <!--                </tr>-->
             </table>
-
         </div>
     </div>
 </template>
@@ -102,9 +101,6 @@ export default {
     },
     mounted() {
         this.fetchUsers()
-            .then(() => {
-                console.log(this.getUsers)
-            })
     }
 }
 </script>

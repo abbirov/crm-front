@@ -7,7 +7,7 @@
                     <div class="fs-5 fw-bolder ml" id="exampleModalLabel">Kompaniya qo'shish</div>
                 </div>
                 <div class="modal-body">
-                    <form @submit.prevent="auth">
+                    <form @submit.prevent="addComp">
                         <div class="mb-3">
                             <label for="name" class="form-label fw-semibold">Nomi</label>
                             <input v-model="form.name" type="text" class="form-control" >
@@ -20,7 +20,7 @@
                             <label for="exampleInputPassword1" class="form-label fw-semibold">Parol</label>
                             <input v-model="form.password" type="password" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-primary">Qo'shish</button>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Qo'shish</button>
                     </form>
                 </div>
             </div>
@@ -30,6 +30,8 @@
 </template>
 
 <script>
+
+import {mapActions} from "vuex";
 
 export default {
     name: "AddCompanyModal",
@@ -42,6 +44,15 @@ export default {
             }
         }
     },
+    methods: {
+        ...mapActions(['addCompany', 'fetchCompanies']),
+        addComp(){
+            this.addCompany(this.form)
+                .then(() => {
+                    this.fetchCompanies()
+                })
+        }
+    }
 
 }
 </script>

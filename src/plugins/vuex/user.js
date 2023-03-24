@@ -40,28 +40,28 @@ export default {
             })
         },
 
-        fetchUser(context, userId){
-            return new Promise((resolve, reject) => {
-                axios.get('http://localhost:2205/api/users/' + userId)
-                    .then((response) => {
-                        console.log('User olindi')
-
-                        let user = {
-                            id: response.data.id,
-                            name: response.data.name,
-                            email: response.data.email,
-                            password: response.data.password
-                        }
-
-                        context.commit('updateUser', user)
-                        resolve()
-                    })
-                    .catch(() => {
-                        console.log('User olishda xatolik')
-                        reject()
-                    })
-            })
-        },
+        // fetchUser(context, userId){
+        //     return new Promise((resolve, reject) => {
+        //         axios.get('http://localhost:2205/api/users/' + userId)
+        //             .then((response) => {
+        //                 console.log('User olindi')
+        //
+        //                 let user = {
+        //                     id: response.data.id,
+        //                     name: response.data.name,
+        //                     email: response.data.email,
+        //                     password: response.data.password
+        //                 }
+        //
+        //                 context.commit('updateUser', user)
+        //                 resolve()
+        //             })
+        //             .catch(() => {
+        //                 console.log('User olishda xatolik')
+        //                 reject()
+        //             })
+        //     })
+        // },
         setUser(context, data){
             return new Promise((resolve, reject) => {
                 axios.put(`http://localhost:2205/api/users/${data.id}`, data)
@@ -94,9 +94,9 @@ export default {
         updateUsers(state, users){
             state.users = users
         },
-        updateUser(state, user){
-            state.user = user
-        }
+        // updateUser(state, user){
+        //     state.user = user
+        // }
     },
     state: {
         users: {

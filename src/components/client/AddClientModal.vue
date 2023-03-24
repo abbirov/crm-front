@@ -7,7 +7,7 @@
                     <div class="fs-5 fw-bolder ml" id="exampleModalLabel">Mijoz qo'shish</div>
                 </div>
                 <div class="modal-body">
-                    <form @submit.prevent="auth">
+                    <form @submit.prevent="addCli">
                         <div class="mb-3">
                             <label for="name" class="form-label fw-semibold">Ism</label>
                             <input v-model="form.name" type="text" class="form-control" >
@@ -20,7 +20,20 @@
                             <label for="exampleInputPassword1" class="form-label fw-semibold">Parol</label>
                             <input v-model="form.password" type="password" class="form-control" >
                         </div>
-                        <button type="submit" class="btn btn-primary">Qo'shish</button>
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold" for="select">Ishlash joyi</label>
+                            <select
+                                v-model="form.company"
+                                class="form-select" id='select' aria-label="Default select example">
+                                <option value="" disabled selected>Kompaniyani tanlang</option>
+                                <option
+                                v-for="company of getCompanies"
+                                :key="company.id" :value="'/api/companies/' + company.id">
+                                    {{company.name}}
+                                </option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal"  >Qo'shish</button>
                     </form>
                 </div>
             </div>
@@ -31,6 +44,8 @@
 
 <script>
 
+import {mapActions, mapGetters} from "vuex";
+
 export default {
     name: "AddClientModal",
     data() {
@@ -38,10 +53,27 @@ export default {
             form: {
                 name: '',
                 email: '',
-                password: ''
+                password: '',
+                company: ''
             }
         }
     },
+    computed: {
+        ...mapGetters(['getCompanies'])
+    },
+    methods: {
+        ...mapActions(['addClient','fetchCompanies', 'fetchClients']),
+        addCli(){
+            this.addClient(this.form)
+                .then(() => {
+                    this.fetchClients()
+                })
+        }
+    },
+    mounted() {
+        this.fetchClients()
+    }
+
 
 }
 </script>
